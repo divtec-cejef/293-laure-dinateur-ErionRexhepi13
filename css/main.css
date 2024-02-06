@@ -18,7 +18,7 @@ img {
 }
 
 a {
-    color: deeppink;
+    color: #E71D36;
     text-decoration: none;
 }
 
@@ -32,7 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Changa One';
+    font-family: 'Changa One', sans-serif;
+
 }
 
 
