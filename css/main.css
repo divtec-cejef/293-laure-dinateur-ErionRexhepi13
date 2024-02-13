@@ -108,28 +108,28 @@ header {
     font-size: 100%;
     color: black;
     display: list-item;
-    list-style-image: url(../_sources/images/phone.png);
+    list-style-image: url(../images/phone.png);
 }
 .liste2 {
     font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
     font-size: 100%;
     color: black;
     display: list-item;
-    list-style-image: url(../_sources/images/mail.png);
+    list-style-image: url(../images/mail.png);
 }
 .liste3 {
     font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
     font-size: 100%;
     color: black;
     display: list-item;
-    list-style-image: url(../_sources/images/twitter.png);
+    list-style-image: url(../images/twitter.png);
 }
 .liste4 {
     font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
     font-size: 100%;
     color: black;
     display: list-item;
-    list-style-image: url(../_sources/images/facebook.png);
+    list-style-image: url(../images/facebook.png);
 }
 ul {
     margin-left: 40px;
