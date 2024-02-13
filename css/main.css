@@ -7,8 +7,8 @@ body {
     font-weight: 400;
     font-size: 100%;
     line-height: 1.4;
-    color: darkblue;
     background-color: whitesmoke;
+    margin: 0;
 }
 
 img {
@@ -25,7 +25,9 @@ a {
 a:hover {
     color: darkmagenta;
 }
-
+/***************************************
+                 TITRES
+***************************************/
 h1,
 h2,
 h3,
@@ -36,15 +38,46 @@ h6 {
 
 }
 
+h1 {
+    color : #2EC4B6;
+}
+
+h2 {
+    color : #E71D36;
+}
+
 
 /***************************************
-            ENTÊTE DE PAGE
+            MENU DE NAVIGATION
 ***************************************/
 
-.page-accueil h1 {
+li {
+    display : inline-block;
+    margin-right: 10px;
+}
 
+nav ul li {
+    border : 3px
 }
 
 /***************************************
             ENTÊTE DE PAGE
 ***************************************/
+
+header {
+    background-color: #011627;
+}
+
+/***************************************
+            PIED DE PAGE
+***************************************/
+
+
+
+/***************************************
+           PAGE INFORMATIONS
+***************************************/
+
+.page-info .photo {
+
+}
