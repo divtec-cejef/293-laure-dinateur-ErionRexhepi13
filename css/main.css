@@ -2,12 +2,59 @@
     box-sizing: border-box;
 }
 
+
+@media  screen and (min-width: 660px){
+    .page-accueil ul.realisations li {
+        flex-basis: 33%;
+        flex-grow: 3;
+    }
+}
+
+/*************************************
+                FONTS
+ ************************************/
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/*************************************
+            Règles Générales
+ ************************************/
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 100%;
     line-height: 1.4;
-    background-color: whitesmoke;
+    color: #011627;
+    background-color: #fdfffc;
     margin: 0;
 }
 
@@ -17,17 +64,6 @@ img {
     width: auto;
 }
 
-a {
-    color: #E71D36;
-    text-decoration: none;
-}
-
-a:hover {
-    color: darkmagenta;
-}
-/***************************************
-                 TITRES
-***************************************/
 h1,
 h2,
 h3,
@@ -35,109 +71,141 @@ h4,
 h5,
 h6 {
     font-family: 'Changa One', sans-serif;
-
+    font-weight: 400;
 }
 
 h1 {
-    color : #2EC4B6;
+    font-size: 2rem;
+    margin-bottom: 1em;
 }
 
 h2 {
-    color : #E71D36;
+    font-size: 1.5rem;
+    margin-bottom: .75em;
 }
 
-
-/***************************************
-            MENU DE NAVIGATION
-***************************************/
-
-li {
-    display : inline-block;
-    margin-right: 10px;
+p {
+    line-height: 1.5;
 }
 
-nav ul li {
-    border : 3px
+a {
+    color: #e71d36;
+    text-decoration: none;
 }
 
-/***************************************
-            ENTÊTE DE PAGE
-***************************************/
+a:hover {
+    /*border-bottom: 2px solid #e71d36;*/
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
 
+/*************************************
+            ENTÊTE DU SITE
+ ************************************/
 header {
     background-color: #011627;
+    text-align: center;
+    padding: 5px 30px;
 }
 
-/***************************************
-            PIED DE PAGE
-***************************************/
-
-
-
-/***************************************
-           PAGE INFORMATIONS
-***************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-.page-contact h1 {
-    margin-left: 15px;
-    margin-bottom: -2px;
+header ul {
+    padding: 0;
 }
-.section-infos {
-    margin-left: 15px;
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
 }
-.section-infos p {
-    margin-top: -25px;
-    padding-right:35px;
+
+.accueil {
+    display: none;
 }
-.section-contact {
-    margin-left: 15px;
+
+header ul li a {
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    color: #fdfffc;
 }
-.liste1 {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    display: list-item;
-    list-style-image: url(../images/phone.png);
-}
-.liste2 {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    display: list-item;
-    list-style-image: url(../images/mail.png);
-}
-.liste3 {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    display: list-item;
-    list-style-image: url(../images/twitter.png);
-}
-.liste4 {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    display: list-item;
-    list-style-image: url(../images/facebook.png);
-}
-ul {
-    margin-left: 40px;
-}
-.page-contact  .lien-contact a{
+
+header ul li a:hover,
+header ul li a.actif {
     color: #2ec4b6;
 }
 
+header .personne {
+    font-size: 1.75rem;
+    line-height: 0.8;
+    color: #2ec4b6;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+header .metier {
+    margin-top: -5px;
+}
+
+/*************************************
+            FOOTER
+ ************************************/
+
+footer {
+    text-align: center;
+    padding: 50px 0 0; /* 50px en haut */
+}
+
+footer nav {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+
+    -webkit-transition: -webkit-filter 500ms linear;
+    transition: filter 500ms linear;
+}
+
+footer ul li img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*************************************
+            PAGE ACCUEIL
+ ************************************/
+.page-accueil h1 {
+    color: yellow;
+}
+
+/*************************************
+            PAGE CONTACT
+ ************************************/
+.page-contact h1 {
+    color: red;
+}
+
+/*************************************
+            PAGE INFO
+ ************************************/
+.page-infos h1 {
+    color: aqua;
+}
 
 
 
